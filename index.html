@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stige</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <nav class="">
+            <img src="menu (1).png" class="menu-img">
+            <img src="boy.png" class="logo">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Me</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About me</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()"  id="btn"><span></span></button>
+        </nav>
+        <div class="dark-container">
+            <img src="lamp.png"  class="moon">
+            <img src="light.png"  class="light" id="light">      
+        
+        </div>
+        <div class="text-container">
+            <h1> Study <br>In Light </h1>
+            <p>Work hard Until Lamp Light of your study table Becomes spot Light of stage..</p>
+            <a href="">Check My Github</a>
+
+    </div>
+ <script>
+     var btn = document.getElementById("btn");
+     var light= document.getElementById("light");
+
+     function toggleBtn(){
+         btn.classList.toggle("active")
+         light.classList.toggle("on");
+
+     }
+ </script>   
+</body>
+</html>
